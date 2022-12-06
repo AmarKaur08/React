@@ -10,7 +10,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <div class="format">
+    <div >
       <App/>    
     </div>
   </StrictMode>

@@ -1,9 +1,19 @@
 .bgd{
+ 
   background-color: lightgreen;
   border: 1px;
   margin:14px;
-  padding:5px;
+  padding:5px; 
+  /* width:30%;
+  height:30%; */
+  text-align: center;
 
+}
+
+.imgdecor{
+  width:150px;
+  height:150px;
+  
 }
 .bgd:hover{
   transform:scale(1.02);

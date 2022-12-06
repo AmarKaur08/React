@@ -2,14 +2,17 @@ import React from 'react';
 import CardList from './CardList';
 import {robots } from './Robots';
 import SearchBox from './SearchBox';
+import './App.css';
 
 const App=()=>
 {
   return(
-  <div>
+  <div className="main"> 
   <h1>RoboFriends</h1>
   <SearchBox/>
-  <CardList robots={robots}/>  
+  <div className="cards">
+  <CardList robots={robots}/> 
+  </div> 
   </div>
   );
 }
