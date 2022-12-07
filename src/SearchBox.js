@@ -1,14 +1,16 @@
 import React from 'react';
 import './SearchBox.css';
 
-const SearchBox=()=>
+const SearchBox=({searchfield,searchChange})=>
 {
   return(
-  <div class="searchbar">
+  <div className="searchbar">
   <input
-  class="decorsearch"
+  className="decorsearch"
    type="search" 
-   placeholder="Search..."/>
+   placeholder="Search..."
+   onChange={searchChange}/>
+   
    </div>
   );
   

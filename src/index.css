@@ -2,3 +2,8 @@
   display:flex;
   flex-wrap: wrap;
 }
+.body{
+  margin:0;
+  padding:0;
+  /* background:linear-gradient(right,rgba()); */
+}
