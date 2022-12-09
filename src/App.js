@@ -4,6 +4,7 @@ import CardList from './CardList';
 import SearchBox from './SearchBox';
 import './App.css';
 import Scroll from './Scroll'
+import Error from './Error'
 
 //state-description of app//parent feeds state into the child component and asa child compoennet recieve the stte its a property
 
@@ -51,10 +52,15 @@ class App extends Component {//smart component
       <div className="main"> 
       <h1 id="">RoboFriends</h1>
       <SearchBox searchChange={this.onSearchChange}/>
-      <Scroll>
-      <div className="cards">      
+      <Scroll> 
+             
+      <div className="cards">    
+      <Error>
       <CardList robots={filteredRobots}/>
+      </Error>
       </div>
+      
+      
             </Scroll>
       </div>
       );
